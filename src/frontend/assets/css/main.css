@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "nunito", sans-serif;
+}
+
+body {
+    outline: none;
+    background-color: #202121;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.header {
+    height: 30px;
+    background-color: #303030;
+    padding: 0;
+    -webkit-app-region: drag;
+}
+
+.title {
+    position: fixed;
+    color: #aaaaaa;
+    left: 8px;
+    top: 5px;
+}
+
+.nav-btn-group {
+    -webkit-app-region: no-drag;
+    float: right;
+    top: 0;
+    height: 30px;
+}
+
+.minimize-btn {
+    padding-left: 12px;
+    padding-top: 5px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: rgb(146, 146, 146);
+    cursor: pointer;
+}
+
+.minimize-btn:hover {
+    background-color: #4b4b4b;
+    color: #aaaaaa;
+    outline: none;
+}
+
+.close-btn {
+    padding-left: 10px;
+    padding-top: 5px;
+    float: right;
+    width: 30px;
+    height: 30px;
+    color: rgb(146, 146, 146);
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: rgb(238, 44, 44);
+    color: #aaaaaa;
+    outline: none;
+}
