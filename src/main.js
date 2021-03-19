@@ -17,6 +17,7 @@ const createWindow = () => {
     titleBarStyle: "hidden",
     backgroundColor: "#202121",
     maximizable: false,
+    show: false,
 
     // prefferences
     webPreferences: {
@@ -28,6 +29,8 @@ const createWindow = () => {
   startupView.loadURL(
     "file://" + path.join(__dirname + "/frontend/login.html")
   );
+
+  startupView.once("ready-to-show", () => startupView.show());
 };
 
 app.on("ready", createWindow);
