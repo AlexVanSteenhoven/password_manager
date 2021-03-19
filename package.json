@@ -1,0 +1,20 @@
+{
+  "name": "password_manager",
+  "version": "0.0.1",
+  "description": "A passowrd manager build width electron, python and Mysql",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ./src/main.js",
+    "dev": "nodemon --watch * --exec npm start"
+  },
+  "author": "Alex van Steenhoven <alex.steenhoven@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^12.0.1",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "electron-prebuilt": "^1.4.13",
+    "python-shell": "^2.0.3"
+  }
+}
